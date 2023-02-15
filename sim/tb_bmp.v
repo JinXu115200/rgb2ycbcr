@@ -30,8 +30,8 @@ reg [ 7:0] vip_pixel_data [0:921600];   //320x240x3
  
 initial begin
 
-    //分别打开 输入/输出BMP图片，以及输出的Txt文本
-	iBmpFileId = $fopen("Q:\\user\\XuJin\\LOD\\FPGA\\rgb2ycbcr\\sim\\Dog_Breeds.bmp","rb");
+    //
+	iBmpFileId = $fopen("Q:\\user\\XuJin\\LOD\\FPGA\\rgb2ycbcr\\sim\\pokey2.bmp","rb");
 //  iBmpFileId = $fopen("Q:\\user\\XuJin\\LOD\\FPGA\\rgb2ycbcr\\sim\\fengjing_320x240.bmp","rb");
 	oBmpFileId = $fopen("Q:\\user\\XuJin\\LOD\\FPGA\\rgb2ycbcr\\sim\\output_file.bmp","wb+");
 	oTxtFileId = $fopen("Q:\\user\\XuJin\\LOD\\FPGA\\rgb2ycbcr\\sim\\output_file.txt","w+");
